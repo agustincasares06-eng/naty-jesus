@@ -9,7 +9,7 @@ export const Footer: React.FC = () => {
             <img src="https://i.pinimg.com/736x/14/60/76/1460760e60de2f8e3a049dd64eee4f5b.jpg" alt="" className="w-full mix-blend-multiply" />
         </div>
         
-        <h2 className="font-serif text-5xl md:text-7xl text-[#5a1a1a] tracking-tight">Jesús & Natalia</h2>
+        <h2 className="font-serif text-5xl md:text-7xl text-[#5a1a1a] tracking-tight">Natalia & Jesús</h2>
         
         <div className="space-y-4">
           <div className="h-px w-12 bg-[#c4a484] mx-auto opacity-30"></div>

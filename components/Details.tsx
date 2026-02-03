@@ -80,8 +80,8 @@ export const Details: React.FC = () => {
         <h4 className="font-cursive text-4xl text-[#c4a484] mb-4">Código de Vestimenta</h4>
         <p className="text-5xl font-serif text-[#5a1a1a] mb-8">Elegante Sport</p>
         <div className="max-w-md mx-auto space-y-4 text-[#7d6e63] font-serif text-lg leading-relaxed italic">
-          <p>Damas: Vestido corto, largo, mono corto o mono largo elegante. IMPORTANTE: No se pueden utilizar colores claros (blanco, beige, crema, rosa claro, etc.)</p>
-          <p>Caballeros: Saco (opcional), camisa y pantalón de vestir (corbata opcional).</p>
+          <p>Damas: Vestido corto, largo, mono corto o mono largo elegante.</p>
+          <p>Caballeros: Saco, camisa y pantalón de vestir (corbata opcional).</p>
         </div>
       </div>
     </div>
