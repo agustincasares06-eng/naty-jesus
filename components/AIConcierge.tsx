@@ -10,7 +10,7 @@ interface ExtendedMessage extends Message {
 export const AIConcierge: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<ExtendedMessage[]>([
-    { role: 'assistant', content: "¡Hola! Soy el asistente virtual de Natalia y Jesús. ¿En qué puedo ayudarte hoy? (Transporte, hotel, dress code...)" }
+    { role: 'assistant', content: "¡Hola! Soy el asistente virtual de Jesús y Natalia. ¿En qué puedo ayudarte hoy? (Transporte, hotel, dress code...)" }
   ]);
   const [input, setInput] = useState('');
   const [isTyping, setIsTyping] = useState(false);

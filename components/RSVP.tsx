@@ -3,7 +3,7 @@ import React from 'react';
 
 export const RSVP: React.FC = () => {
   const COUPLE_WHATSAPP = "5492281367481"; 
-  const DEFAULT_MESSAGE = "¡Hola Natalia y Jesús! Quiero confirmar mi asistencia a su boda. Mi nombre es: ";
+  const DEFAULT_MESSAGE = "¡Hola Jesús y Natalia! Quiero confirmar mi asistencia a su boda. Mi nombre es: ";
 
   const handleWhatsAppRedirect = () => {
     const encodedMessage = encodeURIComponent(DEFAULT_MESSAGE);
@@ -53,7 +53,7 @@ export const RSVP: React.FC = () => {
 
           <div className="pt-6">
             <p className="text-[9px] text-[#c4a484] uppercase tracking-[0.3em] font-bold">
-              Natalia & Jesús • 2026
+              Jesús & Natalia • 2026
             </p>
           </div>
         </div>

@@ -79,9 +79,18 @@ export const Details: React.FC = () => {
         </div>
         <h4 className="font-cursive text-4xl text-[#c4a484] mb-4">Código de Vestimenta</h4>
         <p className="text-5xl font-serif text-[#5a1a1a] mb-8">Elegante Sport</p>
-        <div className="max-w-md mx-auto space-y-4 text-[#7d6e63] font-serif text-lg leading-relaxed italic">
-          <p>Damas: Vestido corto, largo, mono corto o mono largo elegante.</p>
-          <p>Caballeros: Saco, camisa y pantalón de vestir (corbata opcional).</p>
+        <div className="max-w-2xl mx-auto space-y-8 text-[#7d6e63] font-serif text-lg leading-relaxed italic">
+          <div className="space-y-2">
+            <p className="font-bold text-[#5a1a1a] not-italic uppercase text-xs tracking-widest">Damas</p>
+            <p>Vestido corto, largo, mono corto o mono largo elegante.</p>
+            <p className="text-[#5a1a1a] font-bold not-italic text-sm bg-[#5a1a1a]/5 py-2 px-4 rounded-lg inline-block">
+              IMPORTANTE: NO SE PUEDEN UTILIZAR COLORES CLAROS (BEIGE, CREMA, BLANCO, ROSADO, ETC.)
+            </p>
+          </div>
+          <div className="space-y-2">
+            <p className="font-bold text-[#5a1a1a] not-italic uppercase text-xs tracking-widest">Caballeros</p>
+            <p>Saco (opcional), camisa y pantalón de vestir (corbata opcional).</p>
+          </div>
         </div>
       </div>
     </div>

@@ -40,15 +40,15 @@ export const Navigation: React.FC<Props> = ({ scrolled }) => {
         }`}
       >
         <div className="container mx-auto flex justify-between items-center max-w-7xl">
-          {/* Logo */}
+          {/* Logo - Ahora J & N */}
           <a 
             href="#home" 
             onClick={(e) => handleNavClick(e, 'home')}
             className="font-serif text-xl md:text-2xl tracking-tighter text-[#5a1a1a] hover:opacity-70 transition-all duration-500 flex items-center group"
           >
-            <span className="font-light">N</span>
-            <span className="text-[#c4a484] italic mx-1 text-sm md:text-lg">&</span>
             <span className="font-light">J</span>
+            <span className="text-[#c4a484] italic mx-1 text-sm md:text-lg">&</span>
+            <span className="font-light">N</span>
           </a>
           
           {/* Menu Desktop */}
@@ -89,7 +89,7 @@ export const Navigation: React.FC<Props> = ({ scrolled }) => {
         <div className={`absolute right-0 top-0 h-full w-full md:w-[400px] bg-[#fdfaf7] shadow-2xl transition-transform duration-[800ms] ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
           <div className="p-12 flex flex-col h-full">
             <div className="flex justify-between items-center mb-16">
-              <span className="font-serif text-xl tracking-widest text-[#5a1a1a] uppercase">N & J</span>
+              <span className="font-serif text-xl tracking-widest text-[#5a1a1a] uppercase">J & N</span>
               <button 
                 onClick={() => setIsOpen(false)} 
                 className="text-[#7d6e63] text-[9px] uppercase tracking-[0.3em] font-bold"
@@ -113,7 +113,7 @@ export const Navigation: React.FC<Props> = ({ scrolled }) => {
             </div>
 
             <div className="mt-auto pt-10 border-t border-[#c4a484]/20">
-               <p className="text-[9px] text-[#7d6e63] uppercase tracking-[0.4em] font-light">Natalia & Jesús • Febrero 2026</p>
+               <p className="text-[9px] text-[#7d6e63] uppercase tracking-[0.4em] font-light">Jesús & Natalia • Febrero 2026</p>
             </div>
           </div>
         </div>

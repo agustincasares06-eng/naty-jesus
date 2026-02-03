@@ -32,56 +32,67 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <div className="relative h-screen min-h-[800px] w-full flex items-center justify-center overflow-hidden bg-[#fdfaf7]">
-      {/* Elementos botánicos animados */}
-      <div className="absolute -left-20 -bottom-20 w-80 h-80 opacity-20 animate-float pointer-events-none">
-        <img src="https://i.pinimg.com/736x/14/60/76/1460760e60de2f8e3a049dd64eee4f5b.jpg" className="w-full h-full object-contain mix-blend-multiply" alt="" />
+    <div className="relative h-screen min-h-[750px] w-full flex items-center justify-center overflow-hidden bg-[#fcf9f5]">
+      {/* Sutil gradiente superior para legibilidad del menú */}
+      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white/40 to-transparent z-10 pointer-events-none"></div>
+
+      {/* Ilustraciones Botánicas */}
+      <div className="absolute left-[-5%] bottom-[-5%] w-full md:w-1/2 opacity-20 pointer-events-none scale-110">
+        <img 
+          src="https://i.pinimg.com/736x/14/60/76/1460760e60de2f8e3a049dd64eee4f5b.jpg" 
+          alt="" 
+          className="w-full h-full object-contain mix-blend-multiply origin-bottom-left transform -scale-x-100"
+        />
       </div>
-      <div className="absolute -right-20 -top-20 w-80 h-80 opacity-20 animate-float pointer-events-none" style={{ animationDelay: '2s' }}>
-        <img src="https://i.pinimg.com/736x/14/60/76/1460760e60de2f8e3a049dd64eee4f5b.jpg" className="w-full h-full object-contain mix-blend-multiply rotate-180" alt="" />
+      <div className="absolute right-[-5%] top-[-5%] w-full md:w-1/3 opacity-15 pointer-events-none scale-110">
+        <img 
+          src="https://i.pinimg.com/736x/14/60/76/1460760e60de2f8e3a049dd64eee4f5b.jpg" 
+          alt="" 
+          className="w-full h-full object-contain mix-blend-multiply origin-top-right rotate-180"
+        />
       </div>
 
-      <div className="relative z-20 text-center px-6 max-w-4xl">
-        <p className="font-cursive text-3xl text-[#c4a484] mb-8 animate-fade-in">Nuestra gran aventura comienza...</p>
-        
-        <div className="relative mb-12">
+      {/* Contenido Principal */}
+      <div className="relative z-20 text-center max-w-5xl px-6 pt-24 md:pt-32 space-y-10 md:space-y-16">
+        <div className="space-y-4 animate-fade-in">
+          <p className="font-sans-alt text-[9px] md:text-[11px] uppercase tracking-[0.6em] text-[#7d6e63] font-light">
+            Nuestra Boda • Febrero 2026
+          </p>
+          <div className="h-px w-12 bg-[#c4a484] mx-auto opacity-30"></div>
+        </div>
+
+        <div className="space-y-4 md:space-y-8">
           <h1 className="flex flex-col items-center">
-            <span className="text-8xl md:text-9xl lg:text-[11rem] font-serif text-[#5a1a1a] leading-[0.8] tracking-tighter transition-all duration-1000">Natalia</span>
-            <span className="font-cursive text-5xl md:text-7xl text-[#c4a484] -my-4 z-10">&</span>
-            <span className="text-8xl md:text-9xl lg:text-[11rem] font-serif text-[#5a1a1a] leading-[0.8] tracking-tighter transition-all duration-1000">Jesús</span>
+            <span className="text-7xl md:text-8xl lg:text-9xl font-serif text-[#5a1a1a] tracking-tight leading-none">JESÚS</span>
+            <span className="font-cursive text-4xl md:text-6xl text-[#c4a484] my-2 md:my-4">&</span>
+            <span className="text-7xl md:text-8xl lg:text-9xl font-serif text-[#5a1a1a] tracking-tight leading-none">NATALIA</span>
           </h1>
         </div>
 
-        <div className="space-y-12">
-          <div className="flex flex-col items-center space-y-4">
-             <div className="h-px w-24 bg-[#c4a484]/40"></div>
-             <p className="font-sans-alt text-[11px] uppercase tracking-[0.6em] text-[#7d6e63] font-light">
-               Sábado 21 de Febrero, 2026 • Azul
-             </p>
-             <div className="h-px w-24 bg-[#c4a484]/40"></div>
+        <div className="space-y-8 animate-fade-in delay-200">
+          <div className="text-[#5a1a1a] font-serif italic text-lg md:text-xl space-y-2">
+            <p className="tracking-widest uppercase not-italic text-[10px] text-[#7d6e63] font-sans-alt mb-2 opacity-80">Sábado 21 de Febrero</p>
+            <p className="text-base md:text-lg">Azul, Buenos Aires</p>
           </div>
 
-          <div className="flex justify-center space-x-8 md:space-x-16">
+          <div className="flex justify-center space-x-6 md:space-x-12 border-y border-[#c4a484]/15 py-6 max-w-md mx-auto">
             {Object.entries(timeLeft).map(([unit, value]) => (
-              <div key={unit} className="flex flex-col items-center group">
-                <span className="text-2xl md:text-4xl font-serif text-[#5a1a1a] group-hover:scale-110 transition-transform duration-500">{Math.max(0, value as number)}</span>
-                <span className="text-[9px] font-sans-alt uppercase tracking-[0.3em] text-[#c4a484] mt-2 italic">{unit}</span>
+              <div key={unit} className="flex flex-col items-center">
+                <span className="text-xl md:text-2xl font-serif text-[#5a1a1a]">{Math.max(0, value as number)}</span>
+                <span className="text-[8px] font-sans-alt uppercase tracking-[0.3em] text-[#7d6e63] mt-1 font-bold">{unit}</span>
               </div>
             ))}
           </div>
+        </div>
 
-          <div className="pt-6">
-            <a 
-              href="#rsvp" 
-              onClick={scrollToRSVP}
-              className="inline-block relative group"
-            >
-              <div className="absolute -inset-2 bg-[#c4a484]/10 rounded-full blur-xl group-hover:bg-[#5a1a1a]/10 transition-all duration-700"></div>
-              <span className="relative z-10 block border-b border-[#5a1a1a]/40 text-[#5a1a1a] pb-2 text-[11px] font-sans-alt font-bold tracking-[0.5em] uppercase hover:text-[#c4a484] hover:border-[#c4a484] transition-all duration-500">
-                Confirmar Asistencia
-              </span>
-            </a>
-          </div>
+        <div className="pt-4">
+          <a 
+            href="#rsvp" 
+            onClick={scrollToRSVP}
+            className="inline-block border border-[#5a1a1a]/40 text-[#5a1a1a] px-10 py-4 hover:bg-[#5a1a1a] hover:text-white transition-all duration-700 text-[9px] font-sans-alt font-bold tracking-[0.4em] uppercase"
+          >
+            Confirmar Asistencia
+          </a>
         </div>
       </div>
     </div>

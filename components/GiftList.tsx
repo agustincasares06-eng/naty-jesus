@@ -67,7 +67,7 @@ export const GiftList: React.FC = () => {
             </div>
 
             <p className="text-[#7d6e63] font-serif italic text-sm pt-4">
-              Titular: Natalia & Jesús
+              Titular: Jesús & Natalia
             </p>
           </div>
         </div>
